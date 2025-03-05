@@ -11,7 +11,7 @@ init_db()
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-app = FastApi()
+app = FastAPI()
 app.add_middleware(
   CORSMiddleware,
   allow_origins=["http://localhost:3000"], #URL del frontend para permitir la comunicación entre front y back
