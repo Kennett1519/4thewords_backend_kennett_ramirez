@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS 4thewords_prueba_kennett_ramirez;
 USE 4thewords_prueba_kennett_ramirez;
-INSERT INTO leyendas (
+INSERT INTO leyenda (
     nombre,
     categoria,
     descripcion,
