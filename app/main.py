@@ -13,12 +13,13 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI()
 app.add_middleware(
-  CORSMiddleware,
-  allow_origins=["http://localhost:3000"], #URL del frontend para permitir la comunicación entre front y back
-  allow_credentials=True,
-  allow_methods=["*"], #Permite los métodos GET, POST, PUT, DELETE
-  allow_headers=["*"],
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  #URL del frontend para permitir la comunicación entre front y back
+    allow_credentials=True,
+    allow_methods=["*"],  #Permite los métodos GET, POST, PUT, DELETE
+    allow_headers=["*"],
 )
 app.include_router(leyenda_router)
 
 app.mount("/static", StaticFiles(directory=UPLOAD_DIR), name="static")
+
