@@ -20,6 +20,7 @@ Este proyecto es una API construida con Python FastAPI para gestionar un libro v
 3. Configurar la base de datos MySQL:
    Ejecutar el código dentro del archivo script.sql
    Luego, editar DATABASE_URL dentro de database.py para colocar las credenciales de MySQL.
+   Luego abrir MySQL Workbench para conectarse a la instancia y base de datos para tener una correcta ejecución del backend.
 
 4. Iniciar el servidor:
    uvicorn app.main:app --host 127.0.0.1 --port 8080 --reload
